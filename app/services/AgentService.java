@@ -11,8 +11,7 @@ import java.util.concurrent.CompletionStage;
 
 public class AgentService {
     public AgentResponse getAgentResponse(String text) {
-        AgentResponse agentResponse;
-        agentResponse = new AgentResponse();
+        AgentResponse agentResponse = new AgentResponse();
         try {
             WSRequest queryRequest = WS.url("https://api.api.ai/api/query");
             CompletionStage<WSResponse> responsePromise = queryRequest
