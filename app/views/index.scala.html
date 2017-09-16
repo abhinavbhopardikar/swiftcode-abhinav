@@ -24,7 +24,9 @@
         {'background-color':'#dbd1c7'}">
           <span>{{message.text}}</span>
           <span ng-bind-html="trust(message.feedResponse.description)">{{message.feedResponse.description}}</span>
-          <span layout-align="end end" style="margin-top: 4px; float: right; color: #666666 ; font-size: 10px;"> {{message.time}} </span>
+          <span layout-align="end end" style="margin-top: 4px; float: right; color: #666666 ; font-size: 10px;">
+           {{message.time}} 
+         </span>
         </md-card>
        </div>
 ￼
